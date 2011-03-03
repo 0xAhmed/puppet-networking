@@ -1,0 +1,13 @@
+# Bridge <%=  %>
+auto <>
+iface br100 inet static
+	bridge_ports    eth0
+	bridge_stp      off
+	bridge_maxwait  0
+	bridge_fd       0
+	address <%= ip %> 
+	netmask <%= netmask %> 
+	gateway <%= gateway %>
+
+
+
