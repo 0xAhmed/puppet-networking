@@ -1,6 +1,7 @@
 define networking::interfaces ($interface=$name, $order, $mode, $bridge='no', $ip='', $gateway='', $netmask='', $broadcast='') {
 	# may need to add $bridge_name
 	include networking::loopback
+	
 	if $bridge == 'yes' {
 		case $mode {
 			static: {
